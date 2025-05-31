@@ -126,5 +126,23 @@ function fizzBuzzCheck(number:number):string | number{
         return number
 }
 
-console.log(fizzBuzzCheck(15))// FizzBuzz
+//console.log(fizzBuzzCheck(15))// FizzBuzz
+
+
+//challenge 10: Perimeter 2
+
+function  Perimeter(letterl:string, numbernum:number) :number | string{
+ switch (letterl){
+    case "s":
+        return 4*numbernum;
+        break;
+    case "c":
+        return 2*6.28*numbernum;
+        break;
+    default:
+        return "invalid shape"
+ }
+}
+console.log(Perimeter("s",5))// 20
+console.log(Perimeter("w",2)) // invalid shape
 
