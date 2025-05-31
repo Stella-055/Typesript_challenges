@@ -8,7 +8,7 @@ function sumOfPositives(arr:number[]): number {
     }
     return sum;
 }
-console.log(sumOfPositives([1, -4, 7, 12]))//20 
+//console.log(sumOfPositives([1, -4, 7, 12]))//20 
 
 
 // challenge 2:Find Maximum Value
@@ -22,5 +22,27 @@ function findMax(arr:number[]): number {
     }
     return max;
 }
-console.log(findMax([1, 4, 7, 12]))//12 
+//console.log(findMax([1, 4, 7, 12]))//12 
 
+
+interface candidate{
+    name: string;
+    votes: number;
+}
+// challenge 3: Election winner
+function findWinner(arr:candidate[]): candidate {
+
+    let winner:candidate = arr[0];
+    for ( let i=0; i < arr.length; i++){
+        if (arr[i].votes > winner.votes){
+            winner = arr[i];
+        }
+    }
+    return winner;
+ }
+ console.log (findWinner([
+    { name: "Alice", votes: 50 },
+    { name: "Bob", votes: 75 },
+    { name: "Charlie", votes: 65 }
+  ]))//{ name: "Bob", votes: 75 } */
+  
