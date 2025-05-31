@@ -85,6 +85,25 @@ function calculateBMI(weight:number,height:number){
      else
        return ` Your BMI is ${BMI}-obese`
   }
-  console.log(calculateBMI(68,1.75))//22.2
+ // console.log(calculateBMI(68,1.75))//22.2
   
 
+  //challenge 8: Greeting Based On Time
+function greetUser(name:string, hour:number) : string{
+    if (hour>=5 && hour<=11){
+        return `Good Morning, ${name}!`
+    }
+    else if (hour>=12 && hour<=17){
+        return `Good Afternoon ${name}!`
+    }
+    else if (hour>=18 && hour<=21){
+        return `Good Evening ${name}!`
+    }
+    else if (hour>=22 && hour<=4){
+        return `Good Night ${name}!`
+    }
+    else
+        return "Invalid hour"
+}
+
+console.log(greetUser("stella", 10))//Good Morning, stella!
