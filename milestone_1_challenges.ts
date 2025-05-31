@@ -184,3 +184,14 @@ function factorial(num:number):number{
 }
 //console.log(factorial(4))//24
 
+function sumMultiples(n:number, divisor:number):number{
+    let sum:number=0
+    for (let i:number = 1; i <= n; i++) {
+        if (i % divisor === 0) {
+            sum= sum+i;
+        }
+    }
+    return sum;
+}
+ 
+//console.log(sumMultiples(10, 2))//30

@@ -145,3 +145,13 @@ function factorial(num) {
     return number;
 }
 //console.log(factorial(4))//24
+function sumMultiples(n, divisor) {
+    let sum = 0;
+    for (let i = 1; i <= n; i++) {
+        if (i % divisor === 0) {
+            sum = sum + i;
+        }
+    }
+    return sum;
+}
+//console.log(sumMultiples(10, 2))//30
