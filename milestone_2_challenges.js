@@ -56,4 +56,15 @@ function filterByLength(arr, minLength) {
     var items = arr.filter(function (i) { return i.length >= minLength; });
     return items;
 }
-console.log(filterByLength(["cat", "giraffe", "hippo", "dog", "elephant"], 5)); // returns: ["giraffe", "hippo", "elephant"]
+//console.log(filterByLength(["cat", "giraffe", "hippo", "dog", "elephant"], 5))// returns: ["giraffe", "hippo", "elephant"]
+//challenge 7:Sum of Even Numbers
+function sumEvenNumbers(arr) {
+    var sum = 0;
+    for (var i = 0; i < arr.length; i++) {
+        if (arr[i] % 2 === 0) {
+            sum = sum + arr[i];
+        }
+    }
+    return sum;
+}
+console.log(sumEvenNumbers([1, 2, 3, 4, 5, 6])); // returns: 12  
