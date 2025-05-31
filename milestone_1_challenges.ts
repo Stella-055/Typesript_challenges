@@ -143,6 +143,20 @@ function  Perimeter(letterl:string, numbernum:number) :number | string{
         return "invalid shape"
  }
 }
-console.log(Perimeter("s",5))// 20
-console.log(Perimeter("w",2)) // invalid shape
+//console.log(Perimeter("S",5))// 20
+//console.log(Perimeter("w",2)) // invalid shape
+
+
+//challenge 11:  Sum of Even Numbers
+
+function sumEvenNumbers(n:number) :number{
+    let sum:number = 0;
+    for (let i:number = 0; i <= n; i++)  {
+        if (i % 2 === 0) {
+            sum += i;
+        }
+    }
+    return sum;
+}
+console.log(sumEvenNumbers(6))//12 
 
