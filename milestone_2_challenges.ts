@@ -59,6 +59,26 @@ function findWinner(arr:candidate[]): candidate {
     return longest
   }
 
-  console.log(findLongestWord(["apple", "banana", "pear", "grapefruit"]))//grapefruit
-  
+  //console.log(findLongestWord(["apple", "banana", "pear", "grapefruit"]))//grapefruit
+
+  //challenge 5:Count Properties
+
+function countProperties(obj: Record<string,any>): number {
+    
+    let count:number= Object.keys(obj).length
+    return count
+   }
+//console.log(countProperties({ name: "Alice", age: 25, city: "Paris" }))//3
+   
+   
+//challenge6 :Filter by Length
+
+function filterByLength(arr:string[],minLength: number): string[] {
+    let items:string[] =arr.filter(i => i.length>=minLength)
+   return items
+   }
+   
+console.log(filterByLength(["cat", "giraffe", "hippo", "dog", "elephant"], 5))// returns: ["giraffe", "hippo", "elephant"]
+   
+   
  
