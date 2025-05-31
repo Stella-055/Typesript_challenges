@@ -29,8 +29,19 @@ function findWinner(arr) {
     }
     return winner;
 }
-console.log(findWinner([
-    { name: "Alice", votes: 50 },
-    { name: "Bob", votes: 75 },
-    { name: "Charlie", votes: 65 }
-])); //{ name: "Bob", votes: 75 } */
+/*console.log (findWinner([
+   { name: "Alice", votes: 50 },
+   { name: "Bob", votes: 75 },
+   { name: "Charlie", votes: 65 }
+ ]))//{ name: "Bob", votes: 75 } */
+//challenge 4: Longest word
+function findLongestWord(arr) {
+    var longest = arr[0];
+    for (var i = 0; i < arr.length; i++) {
+        if (longest.length < arr[i].length) {
+            longest = arr[i];
+        }
+    }
+    return longest;
+}
+console.log(findLongestWord(["apple", "banana", "pear", "grapefruit"])); //grapefruit
