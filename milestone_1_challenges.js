@@ -3,4 +3,9 @@
 function addition(num1, num2) {
     return num1 + num2;
 }
-console.log(addition(4, 5)); // 9
+//console.log(addition(4,5))// 9
+//challenge 2: convert minutes to seconds
+function convert(minutes) {
+    return minutes * 60;
+}
+console.log(convert(5)); // 300
