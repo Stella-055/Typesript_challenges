@@ -39,13 +39,13 @@ function isNegative(number:number): boolean {
  //challenge 5:can drive
 function canDrive  (name:string,age:number): string {
     if (age>=18){
-        return name+ " is old enough to drive "
+        return name+ " is old enough to drive"
     }
     else
         return name+ " is not old enough to drive yet"
 };
 
-console.log(canDrive("stella",22))// stella  is old enough to drive
+//console.log(canDrive("stella",22))// stella  is old enough to drive
 
 
 //challenge 6:largest number
@@ -62,5 +62,29 @@ function findLargest (a:number,b:number,c:number): number | string {
     else
        return "they are equal  "
  }
- console.log(findLargest(3,4,5))//5
- console.log(findLargest(5,5,5))// they are equal 
+ //console.log(findLargest(3,4,5))//5
+ //console.log(findLargest(5,5,5))// they are equal 
+
+
+
+ //challenge 7:BMI Calculator
+
+function calculateBMI(weight:number,height:number){
+    let BMI:number =  weight/(height * height)
+    if (BMI<18.5){
+     return ` Your BMI is ${BMI}-under weight`
+    }
+    else if (BMI>=18.5 && BMI<=24.5)
+    {
+     return ` Your BMI is ${BMI}-normal weight`
+    }
+    else if (BMI>=25 && BMI<=29.9)
+     {
+      return` Your BMI is ${BMI}-over weight`
+     }
+     else
+       return ` Your BMI is ${BMI}-obese`
+  }
+  console.log(calculateBMI(68,1.75))//22.2
+  
+
