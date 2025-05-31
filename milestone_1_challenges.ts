@@ -46,3 +46,21 @@ function canDrive  (name:string,age:number): string {
 };
 
 console.log(canDrive("stella",22))// stella  is old enough to drive
+
+
+//challenge 6:largest number
+function findLargest (a:number,b:number,c:number): number | string {
+    if (a>b && a>b){
+        return a
+    }
+    else if (b>a && b>c){
+        return b
+    }
+    else if (c>a && c>b){
+        return c
+    }
+    else
+       return "they are equal  "
+ }
+ console.log(findLargest(3,4,5))//5
+ console.log(findLargest(5,5,5))// they are equal 
