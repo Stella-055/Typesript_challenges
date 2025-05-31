@@ -158,5 +158,19 @@ function sumEvenNumbers(n:number) :number{
     }
     return sum;
 }
-console.log(sumEvenNumbers(6))//12 
+//console.log(sumEvenNumbers(6))//12 
+
+
+//challenge 12:  Multiply by Itself
+
+function powerUp(num:number, times:number) :number{
+    let result:number=1
+   
+    for (let i:number = 0; i<times; i++) {
+         result=num*result;
+    }
+    return result;
+}
+console.log(powerUp(2,3))//8
+//console.log(powerUp(5,0))//1 
 
