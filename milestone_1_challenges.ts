@@ -171,6 +171,16 @@ function powerUp(num:number, times:number) :number{
     }
     return result;
 }
-console.log(powerUp(2,3))//8
+//console.log(powerUp(2,3))//8
 //console.log(powerUp(5,0))//1 
+
+//challenge 13:Factorial Calculator
+function factorial(num:number):number{
+    let number=1
+    for (let i:number=1;i<=num;i++){
+        number = number*i;
+    }
+       return number
+}
+//console.log(factorial(4))//24
 
