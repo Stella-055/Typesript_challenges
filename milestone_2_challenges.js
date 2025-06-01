@@ -133,3 +133,14 @@ function reverseLinearSearch(arr, val) {
     return lastindex;
 }
 //console.log(reverseLinearSearch([5, 3, 7, 1, 4, 7], 7) ) // returns: 5 */
+//challenge 13 : linear search  all indices
+function linearSearchAll(arr, val) {
+    var allIndices = [];
+    for (var i = 0; i < arr.length; i++) {
+        if (arr[i] == val) {
+            allIndices.push(i);
+        }
+    }
+    return allIndices;
+}
+//console.log(linearSearchAll([5, 3, 7, 1, 4, 7], 7) ) // returns: [2,5]*/

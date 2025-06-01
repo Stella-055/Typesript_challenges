@@ -165,7 +165,7 @@ function linearSearch(arr:number[],val:number): number {
  
  //challenge 12 :reverse linear search
 
-function reverseLinearSearch(arr :number[],val:number){
+function reverseLinearSearch(arr :number[],val:number): number {
     //return arr.lastindexOf(val)
     let lastindex:number=-1;
      for (let i=0;i<arr.length;i++){
@@ -178,3 +178,22 @@ function reverseLinearSearch(arr :number[],val:number){
  }
 
  //console.log(reverseLinearSearch([5, 3, 7, 1, 4, 7], 7) ) // returns: 5 */
+
+
+ //challenge 13 : linear search  all indices
+
+ function linearSearchAll(arr:number[],val:number): number[] {
+   
+    let allIndices:number[]=[];
+     for (let i=0;i<arr.length;i++){
+         if (arr[i]==val){
+            allIndices.push(i) 
+         }
+ 
+     }
+    return allIndices
+ }
+//console.log(linearSearchAll([5, 3, 7, 1, 4, 7], 7) ) // returns: [2,5]*/
+
+
+ 
