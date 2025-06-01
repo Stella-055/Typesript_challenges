@@ -84,15 +84,15 @@ function differenceEvenOdd(arr) {
 }
 //console.log(differenceEvenOdd([1, 2, 3, 4, 5, 6]))//3 
 //challenge 9 Count Truthy 
-/*function countTruthy( obj: Record<string, any>): number {
-    let sum:number = 0
-    for (k in obj) {
-      if(obj[k]){
-            sum++
+function countTruthy(obj) {
+    var sum = 0;
+    for (var k in obj) {
+        if (obj[k]) {
+            sum++;
         }
-      }
-     return sum
-    }*/
+    }
+    return sum;
+}
 //console.log(countTruthy({ a: 0, b: "hello", c: false, d: 42, e: null }))//2
 //challenge 10 :Average of Numbers
 function average(arr) {

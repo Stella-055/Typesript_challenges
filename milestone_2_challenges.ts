@@ -114,15 +114,15 @@ return  sumEven-sumOdd
 
 //challenge 9 Count Truthy 
 
-/*function countTruthy( obj: Record<string, any>): number {
+function countTruthy( obj: Record<string, any>): number {
     let sum:number = 0
-    for (k in obj) {
+    for (let k in obj) {
       if(obj[k]){
             sum++
         }
       }
      return sum
-    }*/
+    }
     //console.log(countTruthy({ a: 0, b: "hello", c: false, d: 42, e: null }))//2
 
 
