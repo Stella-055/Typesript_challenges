@@ -68,3 +68,29 @@ function sumEvenNumberss(arr) {
     return sum;
 }
 //console.log(sumEvenNumberss([1, 2, 3, 4, 5, 6]))// returns: 12  
+//challenge 8:Difference Between Sum of Even and Odd Numbers
+function differenceEvenOdd(arr) {
+    var evenArray = arr.filter(function (i) { return i % 2 === 0; });
+    var oddArray = arr.filter(function (i) { return i % 2 !== 0; });
+    var sumEven = 0;
+    var sumOdd = 0;
+    for (var i = 0; i < evenArray.length; i++) {
+        sumEven += evenArray[i];
+    }
+    for (var i = 0; i < oddArray.length; i++) {
+        sumOdd += oddArray[i];
+    }
+    return sumEven - sumOdd;
+}
+//console.log(differenceEvenOdd([1, 2, 3, 4, 5, 6]))//3 
+//challenge 9 Count Truthy 
+/*function countTruthy( obj: Record<string, any>): number {
+    let sum:number = 0
+    for (key in obj) {
+      if(obj[key]){
+            sum++
+        }
+      }
+     return sum
+    }*/
+//console.log(countTruthy({ a: 0, b: "hello", c: false, d: 42, e: null }))//2
