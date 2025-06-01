@@ -116,8 +116,8 @@ return  sumEven-sumOdd
 
 /*function countTruthy( obj: Record<string, any>): number {
     let sum:number = 0
-    for (key in obj) {
-      if(obj[key]){
+    for (k in obj) {
+      if(obj[k]){
             sum++
         }
       }
@@ -212,5 +212,18 @@ function reverseLinearSearch(arr :number[],val:number): number {
   
    }
   
-   console.log(countOccurrences(["apple", "banana", "apple", "orange", "banana", "apple"]))// returns: { apple: 3, banana: 2, orange: 1 }
+  // console.log(countOccurrences(["apple", "banana", "apple", "orange", "banana", "apple"]))// returns: { apple: 3, banana: 2, orange: 1 }
   
+
+// challenge 15: Remove Duplicates
+
+ function removeDuplicates(arr:number[]): number[] {
+    let uniqueArray:number[] = [];
+    for (let i = 0; i < arr.length; i++) {
+        if (uniqueArray.indexOf(arr[i]) === -1) {
+            uniqueArray.push(arr[i]);
+        }
+    }
+    return uniqueArray;
+}
+console.log(removeDuplicates([1, 2, 3, 2, 1, 4]))// returns: [1, 2, 3, 4]
