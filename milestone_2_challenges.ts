@@ -63,7 +63,7 @@ function findWinner(arr:candidate[]): candidate {
 
   //challenge 5:Count Properties
 
-function countProperties(obj: Record<string,any>): number {
+function countProperties(obj: {[key:string]:number| string}): number {
     
     let count:number= Object.keys(obj).length
     return count
