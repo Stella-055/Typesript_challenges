@@ -94,3 +94,30 @@ function differenceEvenOdd(arr) {
      return sum
     }*/
 //console.log(countTruthy({ a: 0, b: "hello", c: false, d: 42, e: null }))//2
+//challenge 10 :Average of Numbers
+function average(arr) {
+    var sum = 0;
+    for (var i = 0; i < arr.length; i++) {
+        sum += arr[i];
+    }
+    if (sum == 0) {
+        return 0;
+    }
+    else
+        return sum / arr.length;
+}
+//console.log(average([2, 4, 6, 8])) // returns: 5
+//console.log(average([])) // returns: 0 */
+//challenge 11 Linear Search
+function linearSearch(arr, val) {
+    //return arr.indexOf(val)
+    var firstindex = -1;
+    for (var i = 0; i < arr.length && firstindex == -1; i++) {
+        if (arr[i] == val) {
+            firstindex = i;
+        }
+    }
+    return firstindex;
+}
+//console.log(linearSearch([5, 3, 7, 1,7, 4], 7) ) // returns: 2
+//console.log (linearSearch([5, 3, 7, 1, 4], 10) )// returns: -1) */
