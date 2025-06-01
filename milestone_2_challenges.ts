@@ -163,3 +163,18 @@ function linearSearch(arr:number[],val:number): number {
  //console.log (linearSearch([5, 3, 7, 1, 4], 10) )// returns: -1) */
  
  
+ //challenge 12 :reverse linear search
+
+function reverseLinearSearch(arr :number[],val:number){
+    //return arr.lastindexOf(val)
+    let lastindex:number=-1;
+     for (let i=0;i<arr.length;i++){
+         if (arr[i]==val){
+           lastindex=i  
+         }
+ 
+     }
+    return lastindex
+ }
+
+ //console.log(reverseLinearSearch([5, 3, 7, 1, 4, 7], 7) ) // returns: 5 */

@@ -121,3 +121,15 @@ function linearSearch(arr, val) {
 }
 //console.log(linearSearch([5, 3, 7, 1,7, 4], 7) ) // returns: 2
 //console.log (linearSearch([5, 3, 7, 1, 4], 10) )// returns: -1) */
+//challenge 12 :reverse linear search
+function reverseLinearSearch(arr, val) {
+    //return arr.lastindexOf(val)
+    var lastindex = -1;
+    for (var i = 0; i < arr.length; i++) {
+        if (arr[i] == val) {
+            lastindex = i;
+        }
+    }
+    return lastindex;
+}
+//console.log(reverseLinearSearch([5, 3, 7, 1, 4, 7], 7) ) // returns: 5 */
