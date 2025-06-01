@@ -196,4 +196,21 @@ function reverseLinearSearch(arr :number[],val:number): number {
 //console.log(linearSearchAll([5, 3, 7, 1, 4, 7], 7) ) // returns: [2,5]*/
 
 
- 
+  // challenge 14:Count Occurrences
+
+  function countOccurrences(arr:string[]): Record<string, number> {
+    let occurrences :Record<string, number> = {};
+    arr.forEach((element) => {
+      if (element in occurrences) {
+        occurrences[element] += 1;
+        return;
+      }
+  
+      occurrences[element] = 1;
+    });
+    return occurrences
+  
+   }
+  
+   console.log(countOccurrences(["apple", "banana", "apple", "orange", "banana", "apple"]))// returns: { apple: 3, banana: 2, orange: 1 }
+  
