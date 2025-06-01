@@ -167,4 +167,25 @@ function removeDuplicates(arr) {
     }
     return uniqueArray;
 }
-console.log(removeDuplicates([1, 2, 3, 2, 1, 4])); // returns: [1, 2, 3, 4]
+//console.log(removeDuplicates([1, 2, 3, 2, 1, 4]))// returns: [1, 2, 3, 4]
+//challenge 16 : Most Frequent
+function mostFrequent(arr) {
+    var occurrences = {};
+    arr.forEach(function (element) {
+        if (element in occurrences) {
+            occurrences[element] += 1;
+            return;
+        }
+        occurrences[element] = 1;
+    });
+    var maxCount = 0;
+    var mostFrequentElement = Object.keys(occurrences)[0];
+    for (var element in occurrences) {
+        if (occurrences[element] > maxCount) {
+            maxCount = occurrences[element];
+            mostFrequentElement = element;
+        }
+    }
+    return mostFrequentElement;
+}
+console.log(mostFrequent([1, 2, 3, 2, 1, 4])); // returns: 1
