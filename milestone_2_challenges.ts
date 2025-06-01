@@ -114,7 +114,7 @@ return  sumEven-sumOdd
 
 //challenge 9 Count Truthy 
 
-function countTruthy( obj: Record<string, any>): number {
+function countTruthy( obj: {[key:string]:any} ): number {
     let sum:number = 0
     for (let k in obj) {
       if(obj[k]){
@@ -198,8 +198,8 @@ function reverseLinearSearch(arr :number[],val:number): number {
 
   // challenge 14:Count Occurrences
 
-  function countOccurrences(arr:string[]): Record<string, number> {
-    let occurrences :Record<string, number> = {};
+  function countOccurrences(arr:string[]): {[key:string]:number} {
+    let occurrences :{[key:string]:number} = {};
     arr.forEach((element) => {
       if (element in occurrences) {
         occurrences[element] += 1;
@@ -233,7 +233,7 @@ function reverseLinearSearch(arr :number[],val:number): number {
 //challenge 16 : Most Frequent
 
 function mostFrequent(arr:(string | number)[]): string  {
-    let occurrences :Record<string, number> = {};
+    let occurrences :{[key:string]:number} = {};
     arr.forEach((element) => {
         if (element in occurrences) {
             occurrences[element] += 1;
